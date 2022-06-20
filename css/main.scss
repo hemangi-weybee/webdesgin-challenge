@@ -48,6 +48,7 @@ section{
 }
 
 .desc{
+    text-align: justify;
     a{
         text-decoration: none;
         color: #808080;
@@ -92,7 +93,7 @@ nav.menu-btn {
 nav {
     position: fixed;
     z-index: 999;
-    width: 66%;
+    width: 70%;
     left: 0;
     top: 0;
     background: #FFC0CB;
@@ -200,6 +201,8 @@ nav {
                         padding: 0;
                         li{
                             display: block;
+                            font-weight: bold;
+                            color: var(--primary-color);
                         }
                     }
                     .times{
@@ -224,14 +227,15 @@ nav {
                         border: none;
                         font-size: 1em;
                         margin: 1em 0em;
+                        display: block;
                     }
 
                     .contact{
                         margin: 0;
                         padding: 0;
                         img{
-                            height: 100px;
-                            width: 150px;
+                            height: 40px;
+                            width: 100px;
                             margin: 0.3em .3em;
                             border: 1px solid;
                         }
@@ -245,7 +249,7 @@ nav {
             margin: 1.2em;
             padding: .2em;
             .testimonial-container {
-                margin: 0;
+                margin-right: 1.2em;
                 padding: 0;
 
                 .test-head {
@@ -264,13 +268,14 @@ nav {
                 .events-row {
                     margin: 0;
                     padding: 0;
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
+                    display: flex;
+                    justify-content: space-between;
 
                     .event-left{
                         margin: 0; 
                         padding: 0;
                         img{
+                            border-radius: 20%;
                             margin-top: 1.5em;
                             height: 100px;
                             width: 100px;
@@ -279,7 +284,7 @@ nav {
                     .event-right{
                         margin: 0; 
                         padding: 0; 
-                        margin-left: .5em;
+                        margin-left: .6em;
                     }
                 }
             }
@@ -401,3 +406,167 @@ nav {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .hero-section{
+        .container-slide{
+            position: relative;
+            display: inline;
+            justify-content: space-between;
+
+            .hero-left{
+                display: block;
+            }
+            .hero-right {
+                display: inline-flex;
+
+                img{
+                    height: 200px;
+                    border-radius: 50%;
+                    margin: 1.2em;
+                }
+            }            
+        }
+    }
+
+    .mid-container{
+        .row1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .contact-container{
+                .content{
+                    margin: 0;
+                    input[type="text"],input[type="tel"],input[type="email"]{
+                        margin: .1em;
+                        padding: .3em;
+                        display: block;
+                    }
+
+                    .contact {
+                        display: flex;
+                    }
+
+                    .submit-btn{
+                        display: flex;
+                    }
+                }               
+            }
+        }
+        .row2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .testimonial-container{
+                margin-right: 1.2em;
+            }
+            .event-container{
+               .events-row{
+                    display: flex;
+                    justify-content: space-between;
+               } 
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .header-section{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background: none;
+            position: unset;
+            height: auto;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+    
+            ul {
+                margin: 0;
+                padding: 0;
+                li{
+                    margin: 0;
+                    display: inline-block;
+                }
+            }
+
+            ul.primary-nav{
+                li.current a{
+                    color: var(--primary-color);
+                    font-weight: bold;
+                }
+            }
+
+            
+        }
+    }
+
+    .side-section{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+            .contain-video, .contain-map{
+                margin: 1.5em;
+                padding: .2em;  
+                
+                iframe {
+                    width: 350px;
+                    height: 150px;
+                }
+            }
+
+            .contain-post{
+                margin: 1.5em;
+                padding: .2em; 
+            }
+            
+        }
+
+    }
+
+    .bottom-section{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .footer-section{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media only screen and (min-width: 1475px) {
+
+    section{
+        margin: 2em 5em;
+    }
+
+    .major-section{
+        background-color: white;
+        margin: 1.2em 5em;
+        padding: .2em;
+        display: flex;
+        justify-content: space-between;
+
+       .side-section{
+            display: flex;
+            justify-content: space-between;
+            margin: 1.2em;
+            padding: .2em;
+       }
+
+       .main-section{
+            margin: 1.2em;
+            padding: .2em;
+       }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
