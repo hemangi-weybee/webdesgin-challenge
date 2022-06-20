@@ -10,12 +10,11 @@
     <script src="https://kit.fontawesome.com/7629851435.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="header">
-        <p class="head"><span class="head-highlight">Elim </span>Church Day Nursery 
-            <i class="fa-solid fa-bars mobile-menu" id="mobile-cta"></i></p>
+    <section class="header-section">
+        <p class="head"><img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation"><span class="head-highlight">Elim </span>Church Day Nursery </p>
         
         <nav>
-            <i id="mobile-exit" class="fa-solid fa-xmark" class="mobile-menu-exit"></i>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
             <ul class="primary-nav">
                 <li class="current"><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
@@ -28,15 +27,15 @@
             </ul>
 
             <ul class="secondary-nav">
-                <li><a href="#"><i class="fa-brands fa-twitter nav-icon"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f nav-icon"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google nav-icon"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
             </ul>
         </nav>
     </section>
 
-    <section class="hero">
-        <div class="container">
+    <section class="hero-section">
+        <div class="container-slide">
             <div class="hero-left">
                 <h1>Flexible childcare to suit your lifestyle</h1>
                 <p>Our fliexible bookings are designed to suit your lifestyle and work commitments.</p>
@@ -45,81 +44,256 @@
                 <img src="images/baby1.png" alt="Student" class="hero-img">
             </div>
         </div>
+
+        <div class="container-slide">
+            <div class="hero-left">
+                <h1>Child-First Ideology</h1>
+                <p>At the heart of our preschooling child-first ideology is us.</p>
+            </div>
+            <div class="hero-right">
+                <img src="images/baby1.png" alt="Student" class="hero-img">
+            </div>
+        </div>
+
+        <div class="container-slide">
+            <div class="hero-left">
+                <h1>Healthy Tiffin Activity</h1>
+                <p>Healthy food contains all the necessary elements for our body like protein, vitamin, fats...</p>
+            </div>
+            <div class="hero-right">
+                <img src="images/baby1.png" alt="Student" class="hero-img">
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot all-dot"></span>
+            <span class="dot all-dot"></span>
+            <span class="dot all-dot"></span>
+          </div>
     </section>
 
-    <section class="main">
+    <section class="main-section">
         <div class="container">
             <p class="title"><span class="title-highlight">Welcome to </span>Elim Church Day </p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        <p></p> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> 
+            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
 
         <div class="mid-container">
-            <div class="open-container">
-                <p class="title"><i class="fa-solid fa-timer head-icon"></i>
-                    <span class="title-highlight">Opening </span>Times</p>
-                <div class="content">
-                    <ul class="days">
-                        <li>Monday</li>
-                        <li>Tuesday</li>
-                        <li>Wednesday</li>
-                        <li>Thursday</li>
-                        <li>Friday</li>
-                        <li>Saturday</li>
-                        <li>Sunday</li>
-                    </ul>
-                    <ul class="times">
-                        <li>7.45-12.30</li>
-                        <li>7.45-12.30</li>
-                        <li>7.45-12.30</li>
-                        <li>7.45-12.30</li>
-                        <li>7.45-12.30</li>
-                        <li>7.45-12.30</li>
-                        <li>Sorry Closed</li>
-                        <li>Sorry Closed</li>
-                    </ul>
+            <div class="row1">
+                <div class="opening-container">
+                    <p class="title"><img src="images/time.svg" class="head-icon">  <span class="title-highlight">Opening </span>Times</p>
+                    <div class="content">
+                        <ul class="days">
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                        </ul>
+                        <ul class="times">
+                            <li>7.45-12.30</li>
+                            <li>7.45-12.30</li>
+                            <li>7.45-12.30</li>
+                            <li>7.45-12.30</li>
+                            <li>7.45-12.30</li>
+                            <li>Sorry Closed</li>
+                            <li>Sorry Closed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <div class="content">
+                        <p class="title"><img src="images/mail2.svg" class="head-icon">  <span class="title-highlight">Quick </span>Contact</p>
+                        <form action="">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <input type="tel" name="phone" id="phone" placeholder="Phone">
+                            <input type="text" name="comment" id="comment" placeholder="Comments">
+                            <input type="text" name="captcha" id="captcha" placeholder="Captcha">
+
+                            <div class="contact">
+                                <img class="captcha-icon" src="https://www.tsohost.com/assets/uploads/blog/capcha.jpeg" alt="Captcha">
+                                <i class="fa-solid fa-arrow-rotate-right" id="refresh" style="padding: 1.5em"></i>
+                            </div>
+
+                            <div class="submit-btn">
+                                <input type="submit" value="Submit" name="submit" class="btn">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 
-            <div class="contact-container">
-                <p class="title"><i class="fa-solid fa-timer head-icon"></i>
-                    <span class="title-highlight">Opening </span>Times</p>
-                <form action="">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                    <input type="tel" name="phone" id="phone" placeholder="Phone">
-                    <input type="text" name="comment" id="comment" placeholder="Comments">
-                    <input type="text" name="captcha" id="captcha" placeholder="Captcha">
+            <div class="row2">    
+                <div class="testimonial-container">
+                    <p class="title"><img src="images/chat.svg" class="head-icon">  <span class="title-highlight">Testimonial </span></p>
+                    
+                    <p class="test-head">Lorem ipsum dolor sit amet</p>
+                    <p class="test-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
-                    <div class="contact">
-                        <img class="captcha-icon" src="https://www.tsohost.com/assets/uploads/blog/capcha.jpeg" alt="Captcha">
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                        <input type="submit" value="Submit" name="submit" class="btn">
+                    <p class="test-head">Lorem ipsum dolor sit amet</p>
+                    <p class="test-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                    <div class="btn"> <a href="#"> Read More -> </a> </div>
+                </div>
+
+                <div class="event-container">
+                    <p class="title"><img src="images/calender.svg" class="head-icon">  <span class="title-highlight">Main Nursery </span>Events</p>
+
+                    <div class="events-row">
+                        <div class="event-left">
+                            <img src="images/christmas.jpg" class="event-img" alt="Christmas Nativity">
+                        </div>
+                        <div class="event-right">
+                            <p class="title"><span class="title-highlight">Christmas Nativity </span></p>
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                        </div>
                     </div>
-                </form>
+                    <div class="events-row">
+                        <div class="event-left">
+                            <img src="images/christmas.jpg" class="event-img" alt="Christmas Nativity">
+                        </div>
+                        <div class="event-right">
+                            <p class="title"><span class="title-highlight">Christmas Nativity </span></p>
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                        </div>
+                    </div>
+
+                    <div class="btn"> <a href="#"> Read More -> </a> </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="side">
+    <section class="side-section">
         <div class="container">
             <div class="contain-video">
-                <p class="title"><span class="title-highlight">Nursery </span>Video</p>
-                <iframe width="250px" class="side-content" src="https://www.youtube.com/embed/9FDuUd39NOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="title"><img src="images/video.svg" class="head-icon">  <span class="title-highlight">Nursery </span>Video</p>
+                <iframe class="side-content" src="https://www.youtube.com/embed/9FDuUd39NOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
             
             <div class="contain-map">
-                <iframe width="250px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6193909752856!2d70.76852211527591!3d22.292403048814094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca1ab1b0c65f%3A0xf1f01feb7be92a1!2sWEYBEE%20SOLUTIONS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1655443636910!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="title"><img src="images/location.svg" class="head-icon">  <span class="title-highlight">Location </span>Map</p>
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6193909752856!2d70.76852211527591!3d22.292403048814094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca1ab1b0c65f%3A0xf1f01feb7be92a1!2sWEYBEE%20SOLUTIONS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1655443636910!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="fb-post contain-post" 
-                data-href="https://www.facebook.com/20531316728/posts/10154009990506729/"
-                data-width="250px">
+                data-href="https://www.facebook.com/20531316728/posts/10154009990506729/">
             </div>
-            
     </section>
 
+    <section class="bottom-section">
+        <div class="link-container">
+            <p class="title"><span class="title-highlight">Links </span></p>
+            <ul class="links-list">
+                <li> <a href="#"> Home </a></li>
+                <li> <a href="#"> Events </a></li>
+                <li> <a href="#"> Fees </a></li>
+                <li> <a href="#"> Opening Times </a></li>
+                <li> <a href="#"> Testimonials </a></li>
+                <li> <a href="#"> Ofsteed </a></li>
+                <li> <a href="#"> Rooms </a></li>
+                <li> <a href="#"> Contact </a></li>
+            </ul>
+        </div>
+        
+        <div class="download-container">
+            <p class="title"><span class="title-highlight">Download Prospectus </span></p>
+            <div class="btn-download"> <a href="#"> Download </a></div>
+        </div>
 
+        <div class="photo-container">
+            <p class="title"><span class="title-highlight">Photo Gallery </span></p>
+            <div class="container">
+                <button onclick="plusDivs(-1)"><i class="fa-thin fa-less-than" id="previous-pic"></i></button>
+                <div class="photo-gallery">
+                    <img src="images/child1.jpg" alt="Activity">
+                    <img src="images/child2.jpg" alt="Activity">
+                    <img src="images/child3.jpg" alt="Activity">
+                </div>
+                <div class="photo-gallery">
+                    <img src="images/child4.jpg" alt="Activity">
+                    <img src="images/child5.jpg" alt="Activity">
+                    <img src="images/child6.jpg" alt="Activity">
+                </div>
+                <button onclick="plusDivs(1)"><i class="fa-thin fa-greater-than" id="next-pic"></i></button>
+            </div>
+            <p class="desc"><a href="#">Go to Gallery</a></p>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        
+        <div class="container">
+            <ul>
+                <li>Elim</li>
+                <li>Ofsteed</li>
+                <li>Ecat</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p> &copy; 2015 All Rights Reserved <p>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    
+        var slideIndex = 0;
+        slideshow();
+        
+        function slideshow() {
+            var i;
+            var x = document.getElementsByClassName("container-slide");
+            var dot=document.getElementsByClassName("dot");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }  
+            for (i = 0; i < dot.length; i++) {
+                dot[i].style.backgroundColor = "#C71585";
+            }      
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block";
+            dot[slideIndex-1].style.backgroundColor = "#bbb";
+            setTimeout(slideshow, 2000); 
+        }
+
+        var slideIndice = 1;
+        showDivs(slideIndice);
+
+        function plusDivs(n) {
+        showDivs(slideIndice += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("photo-gallery");
+        if (n > x.length) {slideIndice = 1}
+        if (n < 1) {slideIndice = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndice-1].style.display = "grid";
+        x[slideIndice-1].style.gridTemplateColumns = "1fr 1fr 1fr";
+        }
+
+    </script>
+    
 </body>
 </html>
