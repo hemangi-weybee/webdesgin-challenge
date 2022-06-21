@@ -34,6 +34,12 @@ section {
   cursor: pointer;
 }
 
+.major-section {
+  background: transparent;
+  padding: 0;
+  margin: 1.2;
+}
+
 .title {
   padding: 0;
   font-size: 1.2em;
@@ -46,6 +52,7 @@ section {
 
 .desc {
   text-align: justify;
+  color: var(--content-color);
 }
 .desc a {
   text-decoration: none;
@@ -150,6 +157,9 @@ nav ul.secondary-nav li a:hover {
   background-color: #C71585;
 }
 
+.main-section {
+  margin: 0;
+}
 .main-section .container {
   margin: 1.2em;
   padding: 0.2em;
@@ -228,6 +238,7 @@ nav ul.secondary-nav li a:hover {
 .main-section .mid-container .row2 .testimonial-container .test-content {
   color: var(--content-color);
   font-style: italic;
+  text-align: justify;
 }
 .main-section .mid-container .row2 .event-container {
   margin: 0;
@@ -245,16 +256,28 @@ nav ul.secondary-nav li a:hover {
 }
 .main-section .mid-container .row2 .event-container .events-row .event-left img {
   border-radius: 20%;
-  margin-top: 1.5em;
   height: 100px;
   width: 100px;
 }
 .main-section .mid-container .row2 .event-container .events-row .event-right {
   margin: 0;
   padding: 0;
-  margin-left: 0.6em;
+  margin-left: 0.7em;
+}
+.main-section .mid-container .row2 .event-container .events-row .event-right p.title {
+  margin: 0;
+}
+.main-section .mid-container .row2 .event-container .events-row .event-right p.title span {
+  margin: 0.2em 0;
+}
+.main-section .mid-container .row2 .event-container .events-row .event-right p.desc {
+  margin: 0;
+  margin: 0.5em 0;
 }
 
+.side-section {
+  margin: 1.2em 0;
+}
 .side-section .container {
   margin: 0;
   padding: 0;
@@ -276,7 +299,7 @@ nav ul.secondary-nav li a:hover {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr;
 }
 .bottom-section .link-container ul li::before {
@@ -323,6 +346,7 @@ nav ul.secondary-nav li a:hover {
   display: none;
 }
 .bottom-section .photo-container button {
+  background-color: white;
   border: none;
 }
 .bottom-section .photo-container button:click {
@@ -398,6 +422,20 @@ nav ul.secondary-nav li a:hover {
     display: flex;
     justify-content: space-between;
   }
+
+  .side-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .side-section .container .contain-video, .side-section .container .contain-map, .side-section .container .contain-post {
+    margin: 1.2em;
+    padding: 0.2em;
+  }
+  .side-section .container .contain-video iframe, .side-section .container .contain-map iframe, .side-section .container .contain-post iframe {
+    width: 250px;
+    height: 150px;
+    margin-top: auto;
+  }
 }
 @media only screen and (min-width: 1080px) {
   .mobile-menu, .mobile-menu-exit {
@@ -429,18 +467,18 @@ nav ul.secondary-nav li a:hover {
 
   .side-section .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
   .side-section .container .contain-video, .side-section .container .contain-map {
-    margin: 1.5em;
-    padding: 0.2em;
+    margin: 1.2em;
   }
   .side-section .container .contain-video iframe, .side-section .container .contain-map iframe {
-    width: 350px;
+    width: 250px;
     height: 150px;
   }
-  .side-section .container .contain-post {
-    margin: 1.5em;
+  .side-section .container .fb-post {
+    display: contents;
+    margin: 1.2em;
     padding: 0.2em;
   }
 
@@ -451,28 +489,82 @@ nav ul.secondary-nav li a:hover {
 
   .footer-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1355px) {
   section {
-    margin: 2em 5em;
+    margin: 2em 8em;
   }
 
   .major-section {
-    margin: 1.2em 5em;
+    background-color: white;
+    margin: 1.2em 8em;
     padding: 0.2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex: unset;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
   .major-section .side-section {
-    display: flex;
-    justify-content: space-between;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     margin: 1.2em;
     padding: 0.2em;
   }
   .major-section .main-section {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     margin: 1.2em;
     padding: 0.2em;
+  }
+
+  .bottom-section {
+    display: -webkit-box;
+  }
+  .bottom-section .photo-container {
+    display: table-caption;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  section {
+    margin: 2em 12em;
+  }
+
+  .major-section {
+    background-color: white;
+    margin: 1.2em 12em;
+    padding: 0.2em;
+    display: flex;
+    justify-content: center;
+    flex: unset;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .major-section .side-section {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 1.2em;
+    padding: 0.2em;
+  }
+  .major-section .main-section {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 1.2em;
+    padding: 0.2em;
+  }
+
+  .bottom-section {
+    display: grid;
   }
 }/*# sourceMappingURL=main.css.map */
