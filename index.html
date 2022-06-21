@@ -65,11 +65,11 @@
             </div>
         </div>
 
-        <div style="text-align:center">
+        <div class="dot-container">
             <span class="dot all-dot"></span>
             <span class="dot all-dot"></span>
             <span class="dot all-dot"></span>
-          </div>
+        </div>
     </section>
 
     <section class="major-section" >
@@ -86,23 +86,15 @@
                 <div class="opening-container">
                     <p class="title"><img src="images/time.svg" class="head-icon">  <span class="title-highlight">Opening </span>Times</p>
                     <div class="content">
-                        <ul class="days">
-                            <li>Monday</li>
-                            <li>Tuesday</li>
-                            <li>Wednesday</li>
-                            <li>Thursday</li>
-                            <li>Friday</li>
-                            <li>Saturday</li>
-                            <li>Sunday</li>
-                        </ul>
-                        <ul class="times">
-                            <li>7.45-12.30</li>
-                            <li>7.45-12.30</li>
-                            <li>7.45-12.30</li>
-                            <li>7.45-12.30</li>
-                            <li>7.45-12.30</li>
-                            <li>Sorry Closed</li>
-                            <li>Sorry Closed</li>
+                        <ul>
+                            <li><div class="days">Monday</div><div class="time">7.45 - 12.30</div></li>
+                            <li><div class="days">Tuesday</div><div class="time">7.45 - 12.30</div></li>
+                            <li><div class="days">Wednesday</div><div class="time">7.45 - 12.30</div></li>
+                            <li><div class="days">Thursday</div><div class="time">7.45 - 12.30</div></li>
+                            <li><div class="days">Friday</div><div class="time">7.45 - 12.30</div></li>
+                            <li><div class="days">Saturday</div><div class="time">Sorry Closed</div></li>
+                            <li><div class="days">Sunday</div><div class="time">Sorry Closed</div></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -273,7 +265,7 @@
                 x[i].style.display = "none"; 
             }  
             for (i = 0; i < dot.length; i++) {
-                dot[i].style.backgroundColor = "#C71585";
+                dot[i].style.backgroundColor = "#FF69B4";
             }      
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1} 
